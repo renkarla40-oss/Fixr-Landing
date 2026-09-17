@@ -405,21 +405,38 @@
 }
 
 /* Fixr main hero heading - match Canva */
-.fixr-hero-left .hero__title {
+.hero__title {
   font-family: 'League Spartan', sans-serif !important;
-  font-size: 42px !important;
+  font-size: 44px !important;
   font-weight: 700 !important;
-  line-height: 0.95 !important;
-  letter-spacing: -0.5px !important;
+  line-height: 0.90 !important;
+  letter-spacing: -3px !important;
 }
 
 
 
 /* Fixr hero supporting text - match Canva */
-.fixr-hero-left .hero__text {
+.hero__text {
   font-family: 'Open Sans', sans-serif !important;
-  font-size: 22px !important;
+  font-size: 20px !important;
+  position: relative;
+  top: -6px;
+  margin-top: -12px !important;
   font-weight: 700 !important;
-  line-height: 1.15 !important;
+  line-height: 1 !important;
+  letter-spacing: -1.5px !important;
   opacity: 1 !important;
+}
+
+/* Move only MADE SIMPLE closer to HOME SERVICES */
+.fixr-title-second {
+  position: relative;
+  top: -6px;
+}
+
+
+/* Fixr hero primary CTA */
+.hero__content .button__accent {
+  background: #E53935 !important;
+  border-color: #E53935 !important;
 }
