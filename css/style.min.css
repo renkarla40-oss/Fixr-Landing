@@ -440,3 +440,17 @@
   background: #E53935 !important;
   border-color: #E53935 !important;
 }
+
+/* Fixr Section 2 full-width */
+.steps.landing__section{padding:0!important;margin:0!important}
+
+/* Fixr Section 2 — remove Evie section divider borders */
+.steps.landing__section {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+/* Fixr Section 2 — remove Evie alternating section background */
+.steps.landing__section {
+  background-color: transparent !important;
+}
