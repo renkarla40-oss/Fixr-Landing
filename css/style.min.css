@@ -2121,13 +2121,6 @@
 }
 
 
-/* Align widened desktop benefit row with left hero content */
-@media (min-width: 992px) {
-  .fixr-benefits {
-    transform: translateX(-40px);
-  }
-}
-
 /* Lower desktop navigation from top edge */
 @media (min-width: 992px) {
   .navbar__menu {
@@ -3308,4 +3301,32 @@ body.fixr-modal-open {
 /* Fixr smooth anchor navigation */
 html {
   scroll-behavior: smooth;
+}
+
+/* Restore original Fixr desktop header */
+@media (min-width: 992px) {
+  .navbar,
+  .navbar--extended,
+  .navbar.navbar--extended {
+    background: #0b0b0d !important;
+    background-color: #0b0b0d !important;
+    box-shadow: none !important;
+  }
+
+  .navbar__inner,
+  .navbar--extended .navbar__inner {
+    height: 110px !important;
+  }
+
+  .navbar__logo img {
+    width: 105px !important;
+    height: auto;
+  }
+}
+
+/* Restore spacing below original Fixr header */
+@media (min-width: 992px) {
+  .hero__content {
+    padding-top: 130px !important;
+  }
 }
