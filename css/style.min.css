@@ -2121,13 +2121,6 @@
 }
 
 
-/* Lower desktop navigation from top edge */
-@media (min-width: 992px) {
-  .navbar__menu {
-    transform: translateY(15px) !important;
-  }
-}
-
 /* Fixr Section 5 — Job Journey */
 .fixr-journey {
   padding: 105px 0 95px;
@@ -3328,5 +3321,63 @@ html {
 @media (min-width: 992px) {
   .hero__content {
     padding-top: 130px !important;
+  }
+}
+
+/* Keep desktop hero subject clear of header */
+@media (min-width: 992px) {
+  .hero {
+    background-position: center 20px !important;
+  }
+}
+
+/* Compact Fixr desktop header */
+@media (min-width: 992px) {
+  .navbar__inner,
+  .navbar--extended .navbar__inner {
+    height: 90px !important;
+  }
+
+  .navbar__menu .button {
+    font-size: 16px !important;
+    padding: 5px 18px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Final compact desktop header sizing and vertical centering */
+@media (min-width: 992px) {
+  .navbar__inner,
+  .navbar--extended .navbar__inner {
+    height: 76px !important;
+    min-height: 76px !important;
+    align-items: center !important;
+  }
+
+  .navbar__logo {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .navbar__menu {
+    align-self: center !important;
+  }
+
+  .navbar__menu ul {
+    display: flex !important;
+    align-items: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar__menu li {
+    vertical-align: middle !important;
+  }
+
+  .navbar__menu .button {
+    font-size: 16px !important;
+    padding: 4px 17px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
