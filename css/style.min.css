@@ -3304,3 +3304,8 @@ body.fixr-modal-open {
     height: 111.12%;
 }
 
+
+/* Fixr smooth anchor navigation */
+html {
+  scroll-behavior: smooth;
+}

@@ -25,8 +25,9 @@
 						
 						<li><a href="#for-providers">For Providers</a></li>
 						<li><a href="about.html">About</a></li>
-						
 						<li><a href="#demo" class="button button__accent">Explore Fixr</a></li>
+						
+						
 					</ul>
 				</nav>
 				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
@@ -205,7 +206,7 @@
                     connect with customers and build a reputation that brings more work.
                 </p>
 
-                <a href="#" class="button button__accent fixr-providers__cta">
+                <a href="#" id="openProviderWaitlist" class="button button__accent fixr-providers__cta">
                     Join the Provider List →
                 </a>
             </div>
@@ -380,7 +381,7 @@
 				</p>
 			</div>
 
-			<div class="fixr-journey__demo">
+			<div class="fixr-journey__demo" id="demo">
 				<div class="fixr-demo-phone">
 					<div class="fixr-phone-statusbar" aria-hidden="true">
 						<span class="fixr-phone-time" id="fixrPhoneTime">9:41</span>
@@ -481,7 +482,7 @@
 					</p>
 
 					<div class="fixr-final-cta__actions">
-						<a href="#" class="fixr-final-cta__primary">Explore the Demo</a>
+						
 						<a href="#fixr-waitlist" class="fixr-final-cta__secondary" id="openFixrWaitlist">Join the Waitlist</a>
 					</div>
 
@@ -605,6 +606,16 @@
 	openButton.addEventListener('click', openWaitlist);
 	closeButton.addEventListener('click', closeWaitlist);
 	backdrop.addEventListener('click', closeWaitlist);
+
+	// "Join the Provider List" — opens the same modal with Service Provider pre-selected
+	var providerButton = document.getElementById('openProviderWaitlist');
+	if (providerButton) {
+		providerButton.addEventListener('click', function (event) {
+			openWaitlist(event);
+			var providerRadio = modal.querySelector('input[name="audience"][value="provider"]');
+			if (providerRadio) providerRadio.checked = true;
+		});
+	}
 
 	document.addEventListener('keydown', function (event) {
 		if (event.key === 'Escape' && modal.classList.contains('is-open')) {
