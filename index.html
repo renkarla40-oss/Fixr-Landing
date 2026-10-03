@@ -6,8 +6,10 @@
 	<title>Evie by unDraw</title>
 	<!-- Don't forget to add your metadata here -->
 	<link rel='stylesheet' href='css/style.min.css' />
+	<style>
+	</style>
 </head>
-<body>
+<body id="top">
 	<!-- Hero(extended) navbar -->
 	<div class="navbar navbar--extended">
 		<nav class="nav__mobile"></nav>
@@ -20,10 +22,10 @@
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#how-it-works">How It Works</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#providers">For Providers</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#faq">FAQ</a></li>
+						
+						<li><a href="#for-providers">For Providers</a></li>
+						<li><a href="about.html">About</a></li>
+						
 						<li><a href="#demo" class="button button__accent">Explore Fixr</a></li>
 					</ul>
 				</nav>
@@ -39,8 +41,15 @@
 			<div class="container">
 				<div class="hero__content">
 					<div class="hero__content__inner" id='navConverter'>
-						<h1 class="hero__title">HOME SERVICES.<br><span class="fixr-title-second">MADE SIMPLE.</span></h1>
-						<p class="hero__text">FIND TRUSTED LOCAL SERVICE PROVIDERS<br>IN TRINIDAD &amp; TOBAGO.</p>
+						<h1 class="hero__title">A Better Way to Find<br><span class="fixr-title-second">Local Help Is Coming.</span></h1>
+						<p class="hero__text">Fixr is building a local services platform<br>for Trinidad &amp; Tobago.</p>
+
+						<p class="fixr-hero-intro">
+							<strong>Finding reliable help shouldn't feel like a guessing game.</strong>
+							Fixr is being built to bring customers and independent service providers
+							together in one dedicated local platform.
+						</p>
+
 						<a href="#how-it-works" class="button button__accent">See How Fixr Works →</a>
 						<a href="#demo" class="button hero__button">Explore the Demo</a>
 
@@ -107,96 +116,589 @@
 		</div>
 	</div>
 	<!-- Steps -->
-	<div class="steps landing__section">
-		<div class="steps__inner">
-			<img src="./images/fixr-section2-homeowner.png" alt="Homeowner with local service provider" class="fixr-section2-image">
-		</div>
-	</div>
-	<!-- Expanded sections -->
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="./images/undraw_browser.svg" class="expanded__image">
+<section class="fixr-how landing__section" id="how-it-works">
+    <div class="container">
+        <div class="fixr-how__inner">
+
+            <div class="fixr-how__content">
+                <p class="fixr-how__eyebrow">HOW FIXR WORKS</p>
+
+                <h2 class="fixr-how__title">
+                    Simple steps.<br>
+                    <span>Real results.</span>
+                </h2>
+
+                <p class="fixr-how__intro">
+                    Everything you need to find, book and manage local services in one place.
+                </p>
+
+                <div class="fixr-how__steps">
+
+                    <div class="fixr-how__step">
+                        <div class="fixr-how__number">1</div>
+                        <div>
+                            <h3>Find the help you need</h3>
+                            <p>Choose a service, tell us about the job, and find local providers who can help.</p>
+                        </div>
+                    </div>
+
+                    <div class="fixr-how__step">
+                        <div class="fixr-how__number">2</div>
+                        <div>
+                            <h3>Choose your preferred provider</h3>
+                            <p>View provider information and verification status before deciding who you want to work with.</p>
+                        </div>
+                    </div>
+
+                    <div class="fixr-how__step">
+                        <div class="fixr-how__number">3</div>
+                        <div>
+                            <h3>Keep the job moving</h3>
+                            <p>Request service, receive quotes, chat with your provider, manage payment and follow the job through to completion.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+			<div class="fixr-how__visual">
+				<div class="fixr-how__people-frame">
+					<img
+						src="./images/fixr-section2-cutout.png"
+						alt="Homeowner with local service provider"
+						class="fixr-how__people"
+					>
+
+					<img src="./images/fixr-job-progress.png"
+						 alt="Job in progress"
+						 class="fixr-how__progress-card">
+
+					<img src="./images/fixr-quote-received.png"
+						 alt="Quote received"
+						 class="fixr-how__quote-card">
+
+					<img src="./images/fixr-verified-provider.png"
+						 alt="Verified provider"
+						 class="fixr-how__verified-card">
 				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">Natural styling with almost nothing to learn</h2>
-					<p class="expanded__text">Evie brings you the pages you'll need and the structure to create your own, without a learning curve. It is minimal and mostly styles plain elements. There are only a few classes you'll need to know but nothing to disrupt your preferred coding style.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Fixr Section 3 — Service Providers -->
+<section class="fixr-providers landing__section" id="for-providers">
+    <div class="container">
+
+        <div class="fixr-providers__intro">
+            <div class="fixr-providers__content">
+                <p class="fixr-providers__eyebrow">FOR SERVICE PROVIDERS</p>
+
+                <h2 class="fixr-providers__title">
+                    More opportunities.<br>
+                    <span>More ways to grow.</span>
+                </h2>
+
+                <p class="fixr-providers__text">
+                    Fixr is being built to help local service providers get discovered,
+                    connect with customers and build a reputation that brings more work.
+                </p>
+
+                <a href="#" class="button button__accent fixr-providers__cta">
+                    Join the Provider List →
+                </a>
+            </div>
+
+            <div class="fixr-providers__visual">
+                <div class="fixr-providers__worker-wrap">
+                    <img
+                        src="./images/fixr-provider-woodworker.png"
+                        alt="Local service provider working"
+                        class="fixr-providers__worker"
+                    >
+                </div>
+
+            </div>
+        </div>
+
+        <div class="fixr-providers__benefits">
+
+            <div class="fixr-providers__benefit">
+                <div class="fixr-providers__number">1</div>
+                <h3>Get Discovered</h3>
+                <p>
+                    Show customers what you do and make it easier for people
+                    looking for your services to find you.
+                </p>
+            </div>
+
+            <div class="fixr-providers__benefit">
+                <div class="fixr-providers__number">2</div>
+                <h3>Connect With Customers</h3>
+                <p>
+                    Receive service requests, discuss the job and provide
+                    quotes directly through Fixr.
+                </p>
+            </div>
+
+            <div class="fixr-providers__benefit">
+                <div class="fixr-providers__number">3</div>
+                <h3>Build Your Reputation</h3>
+                <p>
+                    Build trust through completed jobs, customer reviews
+                    and your growing history on Fixr.
+                </p>
+            </div>
+
+            <div class="fixr-providers__benefit">
+                <div class="fixr-providers__number">4</div>
+                <h3>Get More Work</h3>
+                <p>
+                    Let your experience and reputation help bring you more
+                    opportunities over time.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Fixr Section 4: Skills & Service Categories -->
+<section class="fixr-skills">
+    <div class="fixr-skills__inner">
+
+        <div class="fixr-skills__collage" aria-label="Local service providers at work">
+            <div class="fixr-skills__photo fixr-skills__photo--welding">
+                <img src="./images/provider-welding.jpg" alt="Welder at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--carpentry">
+                <img src="./images/provider-carpentry.jpg" alt="Carpenter at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--painting">
+                <img src="./images/provider-painting.png" alt="Painter at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--appliance">
+                <img src="./images/provider-appliance.png" alt="Appliance repair provider at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--ac">
+                <img src="./images/provider-ac.jpg" alt="Air conditioning technician at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--roofing">
+                <img src="./images/provider-roofing.jpg" alt="Roofer at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--flooring">
+                <img src="./images/provider-flooring.jpg" alt="Flooring installer at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--plumbing">
+                <img src="./images/provider-plumbing.png" alt="Plumber at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--electrical">
+                <img src="./images/provider-electrical.jpg" alt="Electrician at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--cleaning">
+                <img src="./images/provider-cleaning.jpg" alt="Cleaner at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--landscaping">
+                <img src="./images/provider-landscaping.jpg" alt="Landscaper at work">
+            </div>
+
+            <div class="fixr-skills__photo fixr-skills__photo--handyman">
+                <img src="./images/provider-handyman.jpg" alt="Handyman at work">
+            </div>
+        </div>
+
+        <div class="fixr-skills__content">
+            <div class="fixr-skills__eyebrow">BRING YOUR SKILLS TO FIXR</div>
+
+            <h2 class="fixr-skills__title">
+                Your skills deserve<br>
+                <span>a platform.</span>
+            </h2>
+
+            <p class="fixr-skills__intro">
+                Maybe you’re the electrician everybody calls. The person who can
+                fix almost anything. The cleaner customers recommend to their
+                friends. The AC technician, carpenter, welder or painter people
+                know they can depend on. Whatever your skill, Fixr is being built
+                with people like you in mind.
+            </p>
+
+            <p class="fixr-skills__lead">
+                Here are some of the service categories coming to Fixr.
+            </p>
+
+            <div class="fixr-skills__categories">
+                <span>Plumbing</span>
+                <span>Electrical</span>
+                <span>Air Conditioning</span>
+                <span>Appliance Repair</span>
+                <span>Carpentry</span>
+                <span>Welding &amp; Metalwork</span>
+                <span>Handyman</span>
+                <span>Cleaning</span>
+                <span>Landscaping</span>
+                <span>Painting</span>
+                <span>Flooring</span>
+                <span>Roofing</span>
+            </div>
+
+            <div class="fixr-skills__expansion">
+                <h3>Don't see your category?</h3>
+                <p>
+                    Fixr is starting with a core group of service categories.
+                    As the platform grows and customers request other types of
+                    services, we'll expand the categories to meet that demand.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+	<!-- Fixr Job Journey -->
+	<section class="fixr-journey">
+		<div class="container">
+
+			<div class="fixr-journey__intro">
+				<span class="fixr-journey__eyebrow">THE WHOLE JOB. ONE PLACE.</span>
+				<h2>Finding the right provider<br>is just the beginning.</h2>
+				<p>
+					Fixr keeps the important parts of the job connected,
+					from the first conversation to final completion.
+				</p>
+			</div>
+
+			<div class="fixr-journey__demo">
+				<div class="fixr-demo-phone">
+					<div class="fixr-phone-statusbar" aria-hidden="true">
+						<span class="fixr-phone-time" id="fixrPhoneTime">9:41</span>
+
+						<div class="fixr-phone-island"></div>
+
+						<div class="fixr-phone-status-icons">
+							<span class="fixr-phone-signal">
+								<i></i><i></i><i></i><i></i>
+							</span>
+
+							<span class="fixr-phone-wifi">
+								<svg viewBox="0 0 24 18">
+									<path d="M2 5.5C7.7.7 16.3.7 22 5.5"/>
+									<path d="M5.5 9.5c3.7-3 9.3-3 13 0"/>
+									<path d="M9 13c1.8-1.4 4.2-1.4 6 0"/>
+									<circle cx="12" cy="16" r="1.3"/>
+								</svg>
+							</span>
+
+							<span class="fixr-phone-battery">
+								<i></i>
+							</span>
+						</div>
+					</div>
+
+					<iframe
+						id="fixr-demo-frame"
+						src="https://fixr-demo.onrender.com/home?demo=true"
+						title="Interactive Fixr Demo"
+					></iframe>
+				</div>
+
+				<div class="fixr-demo-side">
+					<span class="fixr-demo-side__eyebrow">TRY FIXR</span>
+					<h3>Explore the Fixr Demo.</h3>
+					<p>Try the Fixr experience for yourself. Explore the customer side of the app. To experience the provider side, click the customer Profile in the demo and select “Switch to Provider.” You can switch back at any time from the provider Profile.</p>
+
+					<button type="button" id="fixr-demo-reset">
+						Reset Demo
+					</button>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="./images/undraw_frameworks.svg" class="expanded__image">
+
+			<div class="fixr-journey__steps">
+				<div class="fixr-journey__step">
+					<span>01</span>
+					<strong>Request</strong>
+					<p>Tell them what you need.</p>
 				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">Framework agnostic. Your front-end setup, your choice.</h2>
-					<p class="expanded__text">Evie has zero dependencies and uses vanilla JavaScript for a few functions with minimal footprint. You can use React, Vue, Angular, jQuery or whatever you prefer.</p>
+
+				<div class="fixr-journey__step">
+					<span>02</span>
+					<strong>Chat</strong>
+					<p>Keep the conversation together.</p>
+				</div>
+
+				<div class="fixr-journey__step">
+					<span>03</span>
+					<strong>Quote</strong>
+					<p>Receive and review the price.</p>
+				</div>
+
+				<div class="fixr-journey__step">
+					<span>04</span>
+					<strong>Agree</strong>
+					<p>Accept or counter the quote.</p>
+				</div>
+
+				<div class="fixr-journey__step">
+					<span>05</span>
+					<strong>Pay</strong>
+					<p>Handle payment through the app.</p>
+				</div>
+
+				<div class="fixr-journey__step">
+					<span>06</span>
+					<strong>Start</strong>
+					<p>Confirm the job start with a secure code.</p>
+				</div>
+
+				<div class="fixr-journey__step">
+					<span>07</span>
+					<strong>Complete</strong>
+					<p>Confirm completion with a secure code.</p>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="./images/together.svg" class="expanded__image">
-				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">Ready for production or rapid prototyping</h2>
-					<p class="expanded__text">Landing, authentication and a few other pages to select from, despite the small size. Tested on production at unDraw with amazing speeds and unopinionated on how to structure your project. We really hope you'll find it awesome and useful!</p>
+
+			<div class="fixr-final-cta">
+				<div class="fixr-final-cta__content">
+					<span class="fixr-final-cta__eyebrow">FIXR IS COMING</span>
+
+					<h2>A better way to get things done is coming.</h2>
+
+					<p>
+						Fixr is being built for the people who need the work done
+						and the people with the skills to do it.
+					</p>
+
+					<div class="fixr-final-cta__actions">
+						<a href="#" class="fixr-final-cta__primary">Explore the Demo</a>
+						<a href="#fixr-waitlist" class="fixr-final-cta__secondary" id="openFixrWaitlist">Join the Waitlist</a>
+					</div>
+
+					<div class="fixr-final-cta__tagline">
+						Where Trinis Get Things Done.
+					</div>
 				</div>
 			</div>
+
 		</div>
-	</div>
-	<!-- Call To Action -->
-	<div class="cta cta--reverse">
-		<div class="container">
-			<div class="cta__inner">
-				<h2 class="cta__title">Get started now</h2>
-				<p class="cta__sub cta__sub--center">Grab the production version and begin your project instantly.</p>
-				<a href="#" class="button button__accent">Download Evie</a>
-			</div>
-		</div>
-	</div>
+	</section>
 	<!-- Footer -->
-	<div class="footer footer--dark">
-		<div class="container">
-			<div class="footer__inner">
-				<a href="index.html" class="footer__textLogo">Evie theme</a>
-				<div class="footer__data">
-					<div class="footer__data__item">
-						<div class="footer__row">
-							Created by <a href="https://twitter.com/ninalimpi" target="_blank" class="footer__link">Katerina Limpitsouni</a>
-						</div>
-						<div class="footer__row">
-						Code/design by <a href="https://twitter.com/anges244" target="_blank" class="footer__link">Aggelos Gesoulis</a>
-						</div>
-					</div>
-					<div class="footer__data__item">
-						<div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
-						</div>
-					</div>
-					<div class="footer__data__item">
-					<div class="footer__row">
-						<a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
-					</div>
-					<div class="footer__row">
-						<a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
-					</div>
-					<div class="footer__row">
-						<a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
-					</div>
-					<div class="footer__row">
-						<a href="./additional.html" class="footer__link">MIT license</a>
-					</div>
-				</div>
-			</div>
+	<!-- Fixr Footer -->
+<footer class="fixr-footer">
+  <div class="container">
+    <div class="fixr-footer__main">
+
+      <div class="fixr-footer__brand">
+        <a href="#top" class="fixr-footer__logo" aria-label="Fixr home">
+          <img src="images/fixr-logo.png" alt="Fixr">
+        </a>
+        <p>Where Trinis Get Things Done.</p>
+      </div>
+
+      <div class="fixr-footer__group">
+        <h3>Quick Links</h3>
+        <a href="#top">Home</a>
+        <a href="#how-it-works">How it Works</a>
+        <a href="#for-providers">For Providers</a>
+      </div>
+
+      <div class="fixr-footer__group">
+        <h3>Company</h3>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+
+    </div>
+
+    <div class="fixr-footer__bottom">
+      <p>&copy; 2026 Fixr. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 		</div>
 	</div>
+
+<!-- Fixr Waitlist Modal -->
+<div class="fixr-waitlist" id="fixr-waitlist" aria-hidden="true">
+	<div class="fixr-waitlist__backdrop"></div>
+
+	<div class="fixr-waitlist__dialog" role="dialog" aria-modal="true" aria-labelledby="fixr-waitlist-title">
+
+		<button class="fixr-waitlist__close" type="button" aria-label="Close waitlist">
+			&times;
+		</button>
+
+		<span class="fixr-waitlist__eyebrow">FIXR IS COMING</span>
+
+		<h2 id="fixr-waitlist-title">Join the Fixr Waitlist</h2>
+
+		<p class="fixr-waitlist__intro">
+			Be among the first to know when Fixr launches.
+		</p>
+
+		<form class="fixr-waitlist__form" id="fixrWaitlistForm">
+
+			<fieldset class="fixr-waitlist__audience">
+				<legend>I'm joining the waitlist as a:</legend>
+
+				<label>
+					<input type="radio" name="audience" value="customer" required>
+					<span>Customer</span>
+				</label>
+
+				<label>
+					<input type="radio" name="audience" value="provider" required>
+					<span>Service Provider</span>
+				</label>
+			</fieldset>
+
+			<label class="fixr-waitlist__field">
+				<span>Name <small>(optional)</small></span>
+				<input type="text" name="name" autocomplete="name">
+			</label>
+
+			<label class="fixr-waitlist__field">
+				<span>Email address</span>
+				<input type="email" name="email" autocomplete="email" required>
+			</label>
+
+			<button type="submit" class="fixr-waitlist__submit">
+				Join the Waitlist
+			</button>
+
+		</form>
+	</div>
+</div>
+
+
+<script>
+(function () {
+	const modal = document.getElementById('fixr-waitlist');
+	const openButton = document.getElementById('openFixrWaitlist');
+	const closeButton = modal.querySelector('.fixr-waitlist__close');
+	const backdrop = modal.querySelector('.fixr-waitlist__backdrop');
+
+	function openWaitlist(event) {
+		event.preventDefault();
+		modal.classList.add('is-open');
+		modal.setAttribute('aria-hidden', 'false');
+		document.body.classList.add('fixr-modal-open');
+	}
+
+	function closeWaitlist() {
+		modal.classList.remove('is-open');
+		modal.setAttribute('aria-hidden', 'true');
+		document.body.classList.remove('fixr-modal-open');
+	}
+
+	openButton.addEventListener('click', openWaitlist);
+	closeButton.addEventListener('click', closeWaitlist);
+	backdrop.addEventListener('click', closeWaitlist);
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+			closeWaitlist();
+		}
+	});
+
+	document.getElementById('fixrWaitlistForm').addEventListener('submit', async function (event) {
+		event.preventDefault();
+
+		const form = event.currentTarget;
+		const submitButton = form.querySelector('.fixr-waitlist__submit');
+		const audience = form.querySelector('input[name="audience"]:checked');
+		const name = form.querySelector('input[name="name"]').value.trim();
+		const email = form.querySelector('input[name="email"]').value.trim();
+
+		if (!audience) {
+			return;
+		}
+
+		const originalText = submitButton.textContent;
+		submitButton.disabled = true;
+		submitButton.textContent = 'Joining...';
+
+		try {
+			const response = await fetch('https://fixr-1wyh.onrender.com/waitlist', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					name: name || null,
+					email: email,
+					audience: audience.value
+				})
+			});
+
+			const data = await response.json();
+
+			if (!response.ok) {
+				throw new Error(data.detail || 'Unable to join the waitlist.');
+			}
+
+			form.innerHTML = `
+				<div class="fixr-waitlist__success">
+					<div class="fixr-waitlist__success-mark">✓</div>
+					<h3>You're on the list!</h3>
+					<p>${data.message}</p>
+				</div>
+			`;
+
+		} catch (error) {
+			alert(error.message || 'Something went wrong. Please try again.');
+			submitButton.disabled = false;
+			submitButton.textContent = originalText;
+		}
+	});
+})();
+</script>
+
+
+<script>
+(function () {
+    const frame = document.getElementById('fixr-demo-frame');
+    const resetButton = document.getElementById('fixr-demo-reset');
+    const demoUrl = 'https://fixr-demo.onrender.com/home?demo=true';
+
+    if (frame && resetButton) {
+        resetButton.addEventListener('click', function () {
+            frame.contentWindow.postMessage({ type: 'DEMO_RESET' }, '*');
+        });
+    }
+})();
+</script>
+
 <script src='js/app.min.js'></script>
+
+<script>
+(function () {
+  const clock = document.getElementById('fixrPhoneTime');
+  if (!clock) return;
+
+  function updateFixrPhoneTime() {
+    clock.textContent = new Date().toLocaleTimeString([], {
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    }).replace(/\s?[AP]M$/i, '');
+  }
+
+  updateFixrPhoneTime();
+  setInterval(updateFixrPhoneTime, 30000);
+})();
+</script>
+
 </body>
 </html>
