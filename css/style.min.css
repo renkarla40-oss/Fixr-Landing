@@ -3447,7 +3447,7 @@ html {
 /* Section 3 mobile provider — larger and right aligned */
 @media (max-width: 600px) {
   .fixr-providers__worker {
-    width: 580px !important;
+    width: 555px !important;
     transform: translateX(35px);
   }
 }
