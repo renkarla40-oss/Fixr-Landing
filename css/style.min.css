@@ -175,7 +175,7 @@
 /* Fixr desktop hero crop - preserve image behind navigation */
 @media (min-width: 992px) {
   .hero {
-    background-size: 110% auto;
+    background-size: cover;
     background-position: center top;
   }
 }
@@ -1787,7 +1787,7 @@
 @media (max-width: 600px) {
 
   .hero {
-    background-size: 110% auto;
+    background-size: cover;
     background-position: center top;
   }
 
@@ -3379,5 +3379,23 @@ html {
     padding: 4px 17px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+  }
+}
+
+/* Fixr mobile provider collage */
+@media (max-width: 800px) {
+  .fixr-skills__collage {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 1536 / 1024;
+    background: url("../images/fixr-provider-collage-mobile.png") center / contain no-repeat !important;
+  }
+
+  .fixr-skills__photo {
+    display: none !important;
+  }
+
+  .fixr-skills__collage::after {
+    display: none !important;
   }
 }
