@@ -3443,3 +3443,11 @@ html {
     margin-right: -35px !important;
   }
 }
+
+/* Section 3 mobile provider — larger and right aligned */
+@media (max-width: 600px) {
+  .fixr-providers__worker {
+    width: 580px !important;
+    transform: translateX(35px);
+  }
+}
