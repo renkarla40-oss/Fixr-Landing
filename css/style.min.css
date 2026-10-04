@@ -3400,20 +3400,46 @@ html {
   }
 }
 
-/* Mobile visual refinements — Hero copy + provider collage */
+/* =========================================================
+   FIXR MOBILE VISUAL REFINEMENTS
+   ========================================================= */
 @media (max-width: 600px) {
 
-  /* Keep supporting Hero copy away from the subject's face */
-  .fixr-hero-intro {
-    width: 72%;
-    max-width: 390px;
+  /* Hero: keep text primarily on darker left side */
+  .hero__title {
+    width: 78% !important;
+    max-width: 430px !important;
   }
 
-  /* Give the flattened provider collage more presence */
-  .fixr-skills__collage {
-    width: 94% !important;
+  .hero__text {
+    width: 78% !important;
+    max-width: 430px !important;
+  }
+
+  .fixr-hero-intro {
+    width: 66% !important;
+    max-width: 360px !important;
+  }
+
+  /* Section 3: enlarge provider image */
+  .fixr-providers__visual {
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .fixr-providers__worker {
+    display: block;
+    width: 520px !important;
     max-width: none !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    height: auto;
+  }
+
+  /* Section 4: enlarge flattened collage */
+  .fixr-skills__collage {
+    width: calc(100% + 70px) !important;
+    max-width: none !important;
+    margin-left: -35px !important;
+    margin-right: -35px !important;
   }
 }
