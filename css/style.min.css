@@ -3399,3 +3399,21 @@ html {
     display: none !important;
   }
 }
+
+/* Mobile visual refinements — Hero copy + provider collage */
+@media (max-width: 600px) {
+
+  /* Keep supporting Hero copy away from the subject's face */
+  .fixr-hero-intro {
+    width: 72%;
+    max-width: 390px;
+  }
+
+  /* Give the flattened provider collage more presence */
+  .fixr-skills__collage {
+    width: 94% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
